@@ -1,0 +1,17 @@
+name: Simple CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Greetings
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello, CI Workflow!"
+        
+      - name: Print Welcome
+        run: echo "Welcome to CI Workflow!"
