@@ -1,17 +1,14 @@
-name: Simple CI Workflow
+name: Hello World!
 
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
-  build:
-    name: Greetings
-    runs-on: ubuntu-latest
+  hello_world_job:
+    runs-on: ubuntu-20.04
     steps:
-      - name: Print Hello
-        run: echo "Hello, CI Workflow!"
-        
-      - name: Print Welcome
-        run: echo "Welcome to CI Workflow!"
+      - name: Say hello
+        run: |
+          echo "Hello World!"
